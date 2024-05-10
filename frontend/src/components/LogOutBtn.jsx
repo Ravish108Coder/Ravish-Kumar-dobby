@@ -39,7 +39,7 @@ export default function LogOutBtn() {
 
   return (
     <>
-      <Button variant="filled" color="blue-gray" onClick={handleOpen}>Log Out</Button>
+      <Button className="z-[100]" variant="filled" color="blue-gray" onClick={handleOpen}>Log Out</Button>
       <Dialog open={open} handler={handleOpen}>
         <DialogBody divider className="grid place-items-center gap-4">
           <svg

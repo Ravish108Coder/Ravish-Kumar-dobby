@@ -16,7 +16,7 @@ const Home = () => {
 
                 <ImagesContainer uploadFormBtnRef={uploadFormBtnRef} />
             </div>
-            <div className='h-full fixed z-[9999] inline-flex items-center right-6 top-0'>
+            <div className='h-full fixed z-[99] inline-flex items-center right-6 top-0'>
                 <div onClick={() => uploadFormBtnRef.current.click()} className='cursor-pointer animate-bounce inline-flex justify-center items-center bg-blue-gray-100 p-4 rounded-full'><Upload /></div>
             </div>
         </>
