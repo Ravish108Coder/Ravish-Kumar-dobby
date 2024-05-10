@@ -142,13 +142,13 @@ const ImagesContainer = ({ uploadFormBtnRef }) => {
                         <>
                             {images.map((image) => (
                                 <div key={image._id}>
-                                    <div className='flex flex-col gap-1 text-center'><ImageCard image={image} />
+                                    <div className='flex flex-col gap-1 text-center hover:scale-105 transition-transform duration-300 ease-in-out'><ImageCard image={image} />
                                         <Typography className='text-pretty text-blue-gray-700'>{image.name}</Typography>
                                     </div>
 
                                 </div>
                             ))}
-                            <UploadForm uploadFormBtnRef={uploadFormBtnRef} fetchAllImages={fetchAllImages} />
+                            <UploadForm  uploadFormBtnRef={uploadFormBtnRef} fetchAllImages={fetchAllImages} />
                         </>
                     )
                 }
