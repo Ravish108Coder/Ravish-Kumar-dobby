@@ -41,7 +41,6 @@ function SearchButton({ setImages, filter, setFilter, fetchAllImages }) {
             // Create a new AbortController
             const abortController = new AbortController();
             abortControllerRef.current = abortController;
-            setLoading(true);
             const response = await fetch(`${import.meta.env.VITE_SERVER}/api/image/search/${value}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
